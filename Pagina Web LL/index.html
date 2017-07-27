@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta content="Luis Lucas Contreras" name="Lucas" />
+	<meta content="Prensa, Revistas, Tabaco, Coleccionables, Golosinas" name="quiosco" />
+	<title>Quiosco Meseguer</title>
+	<link rel="icon" href="../imagenes/icono.png" type="image/x-icon">
+	<!--<link rel="stylesheet" type="text/css" href="QuioscoMeseguer.css" />-->
+	<link rel="stylesheet" type="text/css" href="QuioscoMeseguer2.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo" class = "myslide w3-content w3-display-container">
+				<img class="mySlides" src="imagenes/kioscodelante.jpg" alt="kioscodelante">
+				<img class="mySlides" src="imagenes/publiizq.jpg" alt="publiizq">
+				<img class="mySlides" src="imagenes/publider.jpg" alt="publider">
+				<img class="mySlides" src="imagenes/localizacion.jpg" alt="localizacion">
+				
+			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			<p id="sucesores">Sucesores de Maria Dolores Meseguer</p>
+		</div>
+		
+		<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			x[slideIndex-1].style.display = "block";  
+		}
+</script>
+	</header>
+		<div>
+			<nav id="navlateral">
+				<ul class="MenuLateral">
+					<li><a href="menu/prensa.html" id="prensa">Prensa</a></li>
+					<li><a href="menu/revistas.html">Revistas</a></li>
+					<li><a href="menu/coleccionables.html">Coleccionables</a></li>
+					<li><a href="menu/tabaco.html" id="tabaco">Tabaco</a></li>
+					<li><a href="menu/publicidad.html">Publicidad</a></li>
+					<li><a href="menu/dvd.html">DVD</a></li>
+					<li><a href="menu/accesorios.html">Accesorios</a></li>
+					<li><a href="menu/consumibles.html">Consumibles</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="noticias">			
+			<article id="articulo0">
+				<h1 class="titulo">Propietarios del Quiosco</h1>
+				<div id="propietarios"><img id="propiet" src="imagenes/propietarios.jpg" alt="propietarios"/></div>
+				<p>Antonio Lucas Marcos y Maria Dolores Contreras Meseguer son las personas que regentan este quiosco de Prensa y Revistas. Empezaron a trabajar en él en 1993
+				cuando se mudaron de Yecla, aunque anteriormente Maria Dolores había estado ya trabajado en el quiosco con su madre Maria Dolores Mesguer Caballero. No hay día que
+				no habran el quiosco, salvo festivos que no hay prensa y dias por causa mayor.
+				Esperemos que estén contentos con el trato recibido por esta profesional pareja.</p>
+			</article>
+			<article id="articulo1">
+				<h1 class="titulo">Adiós a una luchadora incansable</h1>
+				<div id="obituario"><img id="abuela" src="../imagenes/cruz.jpg" alt="cruz"/></div>
+				<p>María Dolores Meseguer, fallecida en Murcia a los 91 años de edad, regentó desde 1968 el quiosco de prensa ubicado en la plaza de la
+				Fuensanta de la capital murciana, un local de los antiguos, pequeño y cuadrado, cuando en la zona solo había solares, dos edificios,
+				un sanatorio y poco más. Poco después, el quiosco se hizo un poco más grande, al compás del crecimiento de la ciudad. Así, fueron
+				aparececiendo la Gran Vía y muchos más edificios, quedando el suyo como uno de los quioscos emblemáticos de la capital.
+				María Dolores fue presidenta de la Agrupación de Vendedores de Prensa hasta finales de los años 80, siendo requerida por distintas
+				asociaciones nacionales para diversos encuentros del sector, a los que siempre aportó su carácter constructivo e idealista.
+				También fue cofundadora de la actual Asociacion de Vendedores Profesionales de Prensa, y una de las piezas fundamentales para poner
+				en marcha el proyecto que permitió unificar el modelo de los quioscos de Murcia y sus pedaníaas, dando así una imagen colectiva al sector,
+				y mirando siempre por los vendedores de prensa. Incluso cuando alcanzó la edad de jubilacion, continuó asesorando en diversos asuntos a los
+				actuales responsables del sector. Luchadora incansable, personalidad y carácter sirven para definirla.
+				Era una persona muy respetuosa y amiga de sus amigos, pero -sobre todo-, una gran madre.</p>
+			</article>
+			<article id="articulo2">
+				<h1 class="titulo">Titulo de prueba2</h1>
+				<p>Cras placerat vehicula est. Pellentesque quis justo ante. Cras hendrerit ligula ante, eu feugiat massa euismod at. Mauris euismod cursus
+				leo, et varius lectus pulvinar id. Curabitur hendrerit dolor ullamcorper, mattis elit ac, aliquet arcu. Class aptent taciti sociosqu ad litora
+				torquent per conubia nostra, per inceptos himenaeos. In et enim eleifend, commodo dui a, maximus ipsum. Sed et leo odio. Nullam sit amet
+				luctus ipsum.</p>
+			</article>
+			<article id="articulo3">
+				<h1 class="titulo">Titulo de prueba3</h1>
+				<p>Nullam porttitor dictum vulputate. Nulla nec eros quis metus porta ultricies. Curabitur suscipit, arcu vel ultricies tempor, tortor metus
+				venenatis magna, vitae interdum tellus sapien sed lectus. Nam dictum massa leo, tincidunt ullamcorper mi cursus ut. Vivamus sodales massa ac
+				sapien posuere, in iaculis massa vestibulum. Vestibulum id gravida enim. Morbi fermentum, ipsum sed cursus laoreet, nisi mauris scelerisque
+				purus, sed rhoncus dolor lectus a erat. Proin malesuada maximus feugiat. Integer ullamcorper euismod ligula, ut lobortis nunc. Phasellus et
+				purus augue. Etiam scelerisque ultrices nisl, in fringilla ipsum pharetra eu. Vivamus feugiat augue sit amet tortor porttitor scelerisque.
+				Maecenas ultricies turpis at mauris posuere molestie. Suspendisse quis nisl pharetra, ornare mi a, venenatis eros.</p>
+			</article>
+		</div>
+	<div>
+	<footer id="piepagina" class="piedepagina">
+		<div><p class="piedepagina" id="copyrigth">© 2017</p></div>
+		<div id="footerderecho"><div><a href="menucontacto/Contacto.html" class="piedepagina" id="contacto"><img src="../imagenes/contacto.png" height="35" alt="Contacto"/></a></div>
+		<div><a href="index.html" class="piedepagina" id="inicio"><img src="../imagenes/inicio.png" height="35" alt="Inicio"/></a></div></div>
+	</footer>
+	</div>
+</body>
+</html>
+
+

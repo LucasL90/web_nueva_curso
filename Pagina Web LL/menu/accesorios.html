@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta content="Luis Lucas Contreras" name="Lucas" />
+	<meta content="Prensa, Revistas, Tabaco, Coleccionables, Golosinas" name="quiosco" />
+	<title>Quiosco Meseguer</title>
+	<link rel="icon" href="../../imagenes/icono.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../QuioscoMeseguer2.css" />
+	<link rel="stylesheet" type="text/css" href="dimensionlogos.css" />
+	<link rel="stylesheet" type="text/css" href="QuioscoMeseguer2.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo" class = "myslide w3-content w3-display-container">
+				<img class="mySlides" src="../imagenes/kioscodelante.jpg" alt="kioscodelante">
+				<img class="mySlides" src="../imagenes/publiizq.jpg" alt="publiizq">
+				<img class="mySlides" src="../imagenes/publider.jpg" alt="publider">
+				<img class="mySlides" src="../imagenes/localizacion.jpg" alt="localizacion">	
+			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			<p id="sucesores">Sucesores de Maria Dolores Meseguer</p>
+		</div>
+		
+		<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	</header>
+	
+		<div>
+			<nav id="navlateral">
+				<ul class="MenuLateral">
+					<li><a href="prensa.html" id="prensa">Prensa</a></li>
+					<li><a href="revistas.html" id="revistas">Revistas</a></li>
+					<li><a href="coleccionables.html" id="coleccionables">Coleccionables</a></li>
+					<li><a href="tabaco.html" id="tabaco">Tabaco</a></li>					
+					<li><a href="publicidad.html" id="publicidad">Publicidad</a></li>
+					<li><a href="dvd.html" id="dvd">DVD</a></li>
+					<li><a href="accesorios.html" id="accesorios">Accesorios</a></li>
+					<li><a href="consumibles.html" id="consumibles">Consumibles</a></li>
+				</ul>
+			</nav>
+		</div>
+	<div class="noticias">
+		<img id="enconstruccion" src="../imagenes/construccion.jpg" alt="construccion">
+	</div>	
+	<footer id="piepagina" class="piedepagina">
+		<div><p class="piedepagina" id="copyrigth">© 2017</p></div>		
+		<div id="footerderecho"><div><a href="../menucontacto/Contacto.html" class="piedepagina" id="contacto"><img src="../../imagenes/contacto.png" height="35" alt="Contacto"/></a></div>
+		<div><a href="../index.html" class="piedepagina" id="inicio"><img src="../../imagenes/inicio.png" height="35" alt="Inicio"/></a></div></div>
+	</footer>
+</body>
+</html>
+
+

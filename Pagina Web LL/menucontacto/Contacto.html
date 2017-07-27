@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta content="Luis Lucas Contreras" name="Lucas" />
+	<meta content="Prensa, Revistas, Tabaco, Coleccionables, Golosinas" name="quiosco" />
+	<title>Quiosco Meseguer</title>
+	<link rel="icon" href="../../imagenes/icono.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../QuioscoMeseguer2.css" />
+	<script src="validarcamporelleno.js"></script>
+	<link rel="stylesheet" type="text/css" href="QuioscoMeseguer2.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo" class = "myslide w3-content w3-display-container">
+				<img class="mySlides" src="../imagenes/kioscodelante.jpg" alt="kioscodelante">
+				<img class="mySlides" src="../imagenes/publiizq.jpg" alt="publiizq">
+				<img class="mySlides" src="../imagenes/publider.jpg" alt="publider">
+				<img class="mySlides" src="../imagenes/localizacion.jpg" alt="localizacion">
+				
+			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			<p id="sucesores">Sucesores de Maria Dolores Meseguer</p>
+		</div>
+		
+		<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	</header>
+	
+		<div>
+			<nav id="navlateral">
+				<ul class="MenuLateral">
+					<li><a href="../menu/prensa.html" id="prensa">Prensa</a></li>
+					<li><a href="../menu/revistas.html">Revistas</a></li>
+					<li><a href="../menu/coleccionables.html">Coleccionables</a></li>
+					<li><a href="../menu/tabaco.html" id="tabaco">Tabaco</a></li>
+					<li><a href="../menu/publicidad.html">Publicidad</a></li>
+					<li><a href="../menu/dvd.html">DVD</a></li>
+					<li><a href="../menu/accesorios.html">Accesorios</a></li>
+					<li><a href="../menu/consumibles.html">Consumibles</a></li>
+				</ul>
+			</nav>
+		</div>
+	<div id="formulariocontacto">
+	<form name="myForm" action="http://www.inertinc.com/cursos/cursoweb2015/evaluf3/" method="post" onsubmit="return validateForm()">
+		<div id="formucontact">
+			<div>
+				<div id="labelnombre"><label for="nombre">Nombre<label id="asterisco">*</label>: </label></div>
+				<div id="inputnombre"><input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre"></div>
+			</div>
+			<div>
+				<div id="labelapellidos"><label for="apellidos">Apellidos: </label></div>
+				<div id="inputapellidos"><input type="text" name="apellidos" id="apellidos" placeholder="Escriba su Apellido"></div>	
+			</div>
+			<div>
+				<div id="labeldir"><label for="dir">Dirección: </label></div>
+				<div id="inputdir"><input type="text" name="dir" id="dir" placeholder="Escriba su dirección"></div>
+			</div>	
+				<div id="labelemail"><label for="emailusuario">E-mail<label id="asterisco">*</label>: </label></div> 
+				<div id="inputemail"><input type="email" name="emailusuario" placeholder="Escriba su Email"></div>
+			<div>
+				<div id="labeltlf"><label for="tlf">Teléfono: </label></div> 
+				<div id="inputtlf"><input type="text" name="tlf" id="tlf" placeholder="Teléfono de contacto"></div>
+			</div>
+			<div>
+				<div id="labelcoment"><label for="comentario">Comentarios<label id="asterisco">*</label>: </label> </div>
+				<div id="textareacoment"></div><textarea name="comentario" placeholder="Escriba sus sugerencias..."></textarea> 
+			</div>
+			<div id="botonesformu">
+				<button type="submit">Enviar</button>
+				<button type="reset">Restablecer</button>
+			</div>
+				<label id="asterisco"> *Campos Obligatorios</label>
+		</div>			
+				<input type="hidden" name="emailalumno" value="smr2a06@gmail.com">
+				<input type="hidden" name="plantillacorreo" value='<body>
+
+<p> Se ha recibido un nuevo formulario de contacto del usuario %nombre% con un comentario acerca de la web.</p>
+<p>El comentario es el siguiente: %comentario%</p>
+
+<div>
+	<p><strong>Datos adicionales del usuario: </strong></p>
+</div>
+	<p>Dirección: %dir%</p>
+	<p>Teléfono: %tlf%</p>
+	<p>Email: %emailusuario%</p>
+</body>'>
+				<input type="hidden" name="clavesecreta" value="3a881f46d2">
+	</div>
+	</form>
+	</div>	
+	<footer id="piepagina" class="piedepagina">
+		<div><p class="piedepagina" id="copyrigth">© 2017</p></div>		
+		<div id="footerderecho"><div><a href="Contacto.html" class="piedepagina" id="contacto"><img src="../../imagenes/contacto.png" height="35" alt="Contacto"/></a></div>
+		<div><a href="../index.html" class="piedepagina" id="inicio"><img src="../../imagenes/inicio.png" height="35" alt="Inicio"/></a></div></div>
+	</footer>
+</body>
+</html>
+
+
